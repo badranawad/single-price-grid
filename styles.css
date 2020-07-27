@@ -1,0 +1,109 @@
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--Light-Gray);
+    font-family: 'Karla', sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 97vh;
+}
+
+.pricing-grid{
+    margin: auto;
+    display: grid;
+    width: 80%;
+    max-width: 650px;
+    justify-content: center;
+    grid-template-areas: 
+    'header header'
+    'details features';
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-columns: 0.48fr 0.52fr;
+    box-shadow: 0 0 7px -3px #666;
+}
+.grid-header{
+    grid-area: header;
+    background: white;
+    border-radius: 5px 5px 0 0;
+    padding: 2em 4em 2em 2em;
+}
+
+.grid-header > div {
+    margin: 0.8em 0;
+}
+
+.title{
+    color: var(--Cyan);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.subtitle{
+    color: var(--Bright-Yellow);
+    font-weight: 700;
+}
+
+.description{
+    color: var(--Grayish-Blue);
+    line-height: 1.5em;
+}
+
+.grid-details{
+    display: gr;
+    grid-area: details;
+    background: var(--Cyan);
+    padding: 2.5em 2em;
+    display: grid;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+    gap: 0.5fr;
+    border-radius: 0 0 0 5px;
+}
+.grid-details > div{
+    margin: 0.5em 0;
+}
+
+.monthly-sub{
+    color: var(--Light-Gray);
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.price > span{
+    color: #fff;
+    font-size: 2em;
+    margin-right: 0.5em;
+}
+
+.price-description{
+    color: var(--Light-Gray);
+    font-size: 0.9em;
+}
+
+.button{
+    background: greenyellow;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1.2em;
+    padding: 0.8em;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #666;
+}
